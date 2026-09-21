@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="head.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="learning.css">
+    <link rel="stylesheet" href="skill.css">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <header class="head">
+        <img src="Pic/ImageProfile.jpg" alt="Profile Image" class="profile-image">
+        <div class="head-info">
+            <h1>Threeraphat Sirima</h1>
+            <p class="nickname">Faro</p>
+        </div>
+    </header>
+
+    <div class="content-row">
+        <section class="contact-box">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <a href="mailto:Faro19748@gmail.com" class="contact-item">
+                    <div class="contact-icon email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">Faro19748@gmail.com</span>
+                    </div>
+                </a>
+
+                <a href="tel:0929876203" class="contact-item">
+                    <div class="contact-icon phone">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">0929876203</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/Faro19748" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <div class="contact-icon github">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">Faro19748</span>
+                    </div>
+                </a>
+
+                <a href="https://www.instagram.com/Faro_Sirima" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+                    <div class="contact-icon instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Instagram</span>
+                        <span class="contact-value">Faro_Sirima</span>
+                    </div>
+                </a>
+
+                <a href="https://www.facebook.com/theeraphat.sirima" target="_blank" rel="noopener noreferrer"
+                    class="contact-item">
+                    <div class="contact-icon facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div class="contact-details">
+                        <span class="contact-label">Facebook</span>
+                        <span class="contact-value">Threeraphat Sirima</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="learning-box">
+            <h2>Learning</h2>
+            <div class="learning-info">
+                <div class="learning-item">
+                    <div class="learning-icon university">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div class="learning-details">
+                        <span class="learning-institution">Srinakarin university</span>
+                        <span class="learning-major">Computer Science</span>
+                        <span class="learning-badge">3rd Year</span>
+                    </div>
+                </div>
+
+                <div class="learning-item">
+                    <div class="learning-icon school">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <div class="learning-details">
+                        <span class="learning-institution school-name">Rayongwittayakom school</span>
+                        <span class="learning-badge">Graduated 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skill-box">
+            <h2>Skill</h2>
+            <div class="skill-wrapper">
+                <div class="skill-rotator">
+                    <button type="button" class="rotator-arrow left" id="rotator-prev" aria-label="Previous category">
+                        <i class="fa-solid fa-caret-left"></i>
+                    </button>
+                    <div class="rotator-items">
+                        <button type="button" class="rotator-item prev" id="item-prev">DataBase</button>
+                        <div class="rotator-item active" id="item-active">Languages</div>
+                        <button type="button" class="rotator-item next" id="item-next">Tool</button>
+                    </div>
+                    <button type="button" class="rotator-arrow right" id="rotator-next" aria-label="Next category">
+                        <i class="fa-solid fa-caret-right"></i>
+                    </button>
+                </div>
+
+                <div class="skill-panels">
+                    <div id="languages" class="skill-tab-content active">
+                        <div class="skill-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/250px-Python-logo-notext.svg.png"
+                                alt="Python" title="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://thumb.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/250px-Java_programming_language_logo.svg.png"
+                                alt="Java" title="Java">
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/Logo_C_sharp.svg/960px-Logo_C_sharp.svg.png"
+                                alt="CSharp" title="CSharp">
+                            <span>C#</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-html5-plain colored" title="HTML"></i>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-css3-plain colored" title="CSS"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-kotlin-plain colored" title="Kotlin"></i>
+                            <span>Kotlin</span>
+                        </div>
+                    </div>
+
+                    <div id="tool" class="skill-tab-content">
+                        <div class="skill-item">
+                            <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/Unity_Technologies_logo.svg/960px-Unity_Technologies_logo.svg.png"
+                                alt="Unity" title="Unity">
+                            <span>Unity</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Adobe_Premiere_Pro_CC_icon.svg"
+                                alt="Premiere pro" title="Premiere pro">
+                            <span>Premiere Pro</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Logo_Aseprite.png"
+                                alt="Aseprite" title="Aseprite">
+                            <span>Aseprite</span>
+                        </div>
+                    </div>
+
+                    <div id="database" class="skill-tab-content">
+                        <div class="skill-item">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg"
+                                alt="PostgreSQL" title="PostgreSQL">
+                            <span>PostgreSQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-database db-icon" title="SQL"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="project-title-wrapper">
+        <div class="title-line left">
+
+            <span class="line-bar"></span>
+        </div>
+        <h2 class="project-title">Project</h2>
+        <div class="title-line right">
+            <span class="line-bar"></span>
+
+        </div>
+    </div>
+
+    <div class="projects-container">
+        <!-- Project Box 1 -->
+        <div class="project-card" id="project-box-1">
+            <div class="project-layout">
+                <div class="project-info">
+                    <div class="project-titles">
+                        <h3>GMTK 2026</h3>
+                        <h3>Steal a Count</h3>
+                    </div>
+                    <p class="project-desc">Game Jam 2026 Theme Count July 27th 2026</p>
+                    <div class="project-tags">
+                        <span class="project-tag"><i class="devicon-unity-plain colored"></i> Unity</span>
+                        <a href="https://faroarow.itch.io/steal-a-count" target="_blank" rel="noopener noreferrer"
+                            class="project-tag project-link">
+                            <i class="fa-brands fa-itch-io"></i> Itch.io
+                        </a>
+                    </div>
+                    <p class="project-text">
+                        This project was developed over four days using the Unity Engine; I handled the programming,
+                        tile mapping, and level design.
+                        It is a 2D top-down stealth game centered on a flashlight mechanic. Players must locate specific
+                        items
+                        within a designated area under a time limit while avoiding making noise by bumping into walls.
+                        The game
+                        features three levels and concludes with a cutscene.
+                    </p>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-container">
+                        <button type="button" class="gallery-btn prev" id="proj1-prev" aria-label="Previous screenshot">
+                            <i class="fa-solid fa-caret-left"></i>
+                        </button>
+                        <div class="gallery-frame">
+                            <img src="Pic/STA1.png" alt="Steal a Count Screenshot" id="project1-img">
+                        </div>
+                        <button type="button" class="gallery-btn next" id="proj1-next" aria-label="Next screenshot">
+                            <i class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div class="gallery-dots" id="proj1-dots">
+                        <button type="button" class="gallery-dot active" data-index="0"
+                            aria-label="Screenshot 1"></button>
+                        <button type="button" class="gallery-dot" data-index="1" aria-label="Screenshot 2"></button>
+                        <button type="button" class="gallery-dot" data-index="2" aria-label="Screenshot 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Box 2 -->
+        <div class="project-card" id="project-box-2">
+            <div class="project-layout">
+                <div class="project-info">
+                    <div class="project-titles">
+                        <h3>SweepNeko</h3>
+                    </div>
+                    <p class="project-desc">Project CP213 Mobile Programing </p>
+                    <div class="project-tags">
+                        <a href="https://github.com/Faro19748/Cp213_project_SweepNeko" target="_blank"
+                            rel="noopener noreferrer" class="project-tag project-link github">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+
+                    <p class="project-text">
+                        This project was developed as part of the CP213 (2nd Year) using Android Studio, Kotlin, and
+                        Jetpack
+                        Compose.
+                        It is an action game for Android where players control a "cat" character by dragging their
+                        fingers across the screen,
+                        they execute slashing attacks to defeat waves of surrounding enemies. The objective is to
+                        survive as long as possible
+                        against increasingly difficult waves, utilizing combo mechanics, ultimate abilities, and various
+                        power-ups.
+                    </p>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-container">
+                        <button type="button" class="gallery-btn prev" id="proj2-prev" aria-label="Previous screenshot">
+                            <i class="fa-solid fa-caret-left"></i>
+                        </button>
+                        <div class="gallery-frame">
+                            <img src="Pic/SN1.jpg" alt="SweepNeko Screenshot" id="project2-img">
+                        </div>
+                        <button type="button" class="gallery-btn next" id="proj2-next" aria-label="Next screenshot">
+                            <i class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div class="gallery-dots" id="proj2-dots">
+                        <button type="button" class="gallery-dot active" data-index="0"
+                            aria-label="Screenshot 1"></button>
+                        <button type="button" class="gallery-dot" data-index="1" aria-label="Screenshot 2"></button>
+                        <button type="button" class="gallery-dot" data-index="2" aria-label="Screenshot 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Box 3 -->
+        <div class="project-card" id="project-box-3">
+            <div class="project-layout">
+                <div class="project-info">
+                    <div class="project-titles">
+                        <h3>BangFire Rising</h3>
+                    </div>
+                    <p class="project-desc">Project CP112 Object-Oriented Programming</p>
+                    <div class="project-tags">
+                        <a href="https://github.com/Faro19748/BangFire-Rising" target="_blank" rel="noopener noreferrer"
+                            class="project-tag project-link github">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                    </div>
+
+                    <p class="project-text">
+                        This project was developed as part of the CP112 (1nd Year) The game was developed using Java,
+                        utilizing frames and custom class objects. It is a roguelike game where the player controls
+                        "Bangfire," aiming to reach the highest altitude while dodging obstacles and using earned
+                        currency to upgrade the firework. I used AI for the cutscene image in game.
+                    </p>
+                </div>
+
+                <div class="project-gallery">
+                    <div class="gallery-container">
+                        <button type="button" class="gallery-btn prev" id="proj3-prev" aria-label="Previous screenshot">
+                            <i class="fa-solid fa-caret-left"></i>
+                        </button>
+                        <div class="gallery-frame">
+                            <img src="Pic/BRS1.png" alt="BangFire Rising Screenshot" id="project3-img">
+                        </div>
+                        <button type="button" class="gallery-btn next" id="proj3-next" aria-label="Next screenshot">
+                            <i class="fa-solid fa-caret-right"></i>
+                        </button>
+                    </div>
+                    <div class="gallery-dots" id="proj3-dots">
+                        <button type="button" class="gallery-dot active" data-index="0"
+                            aria-label="Screenshot 1"></button>
+                        <button type="button" class="gallery-dot" data-index="1" aria-label="Screenshot 2"></button>
+                        <button type="button" class="gallery-dot" data-index="2" aria-label="Screenshot 3"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const categories = [
+            { id: 'languages', label: 'Languages' },
+            { id: 'tool', label: 'Tool' },
+            { id: 'database', label: 'DataBase' }
+        ];
+
+        let currentIndex = 0;
+
+        const itemPrev = document.getElementById('item-prev');
+        const itemActive = document.getElementById('item-active');
+        const itemNext = document.getElementById('item-next');
+        const btnUp = document.getElementById('rotator-prev');
+        const btnDown = document.getElementById('rotator-next');
+        const tabContents = document.querySelectorAll('.skill-tab-content');
+
+        function updateRotator() {
+            const total = categories.length;
+            const prevIndex = (currentIndex - 1 + total) % total;
+            const nextIndex = (currentIndex + 1) % total;
+
+            itemPrev.textContent = categories[prevIndex].label;
+            itemActive.textContent = categories[currentIndex].label;
+            itemNext.textContent = categories[nextIndex].label;
+
+            tabContents.forEach(c => c.classList.remove('active'));
+            const activeContent = document.getElementById(categories[currentIndex].id);
+            if (activeContent) {
+                activeContent.classList.add('active');
+            }
+        }
+
+        function rotateLeft() {
+            currentIndex = (currentIndex - 1 + categories.length) % categories.length;
+            updateRotator();
+        }
+
+        function rotateRight() {
+            currentIndex = (currentIndex + 1) % categories.length;
+            updateRotator();
+        }
+
+        btnUp.addEventListener('click', rotateLeft);
+        btnDown.addEventListener('click', rotateRight);
+        itemPrev.addEventListener('click', rotateLeft);
+        itemNext.addEventListener('click', rotateRight);
+
+        const rotator = document.querySelector('.skill-rotator');
+        if (rotator) {
+            let wheelTimeout;
+            rotator.addEventListener('wheel', (e) => {
+                e.preventDefault();
+                if (wheelTimeout) return;
+                if (e.deltaX < 0 || e.deltaY < 0) {
+                    rotateLeft();
+                } else if (e.deltaX > 0 || e.deltaY > 0) {
+                    rotateRight();
+                }
+                wheelTimeout = setTimeout(() => { wheelTimeout = null; }, 200);
+            }, { passive: false });
+        }
+
+        // Reusable Project Slider Function
+        function setupProjectSlider(config) {
+            const { images, imgId, prevId, nextId, dotsSelector } = config;
+            let currentIndex = 0;
+            const imgEl = document.getElementById(imgId);
+            const prevBtn = document.getElementById(prevId);
+            const nextBtn = document.getElementById(nextId);
+            const dots = document.querySelectorAll(dotsSelector);
+
+            function update(index) {
+                currentIndex = (index + images.length) % images.length;
+                if (imgEl) {
+                    imgEl.style.opacity = '0';
+                    setTimeout(() => {
+                        imgEl.src = images[currentIndex];
+                        imgEl.style.opacity = '1';
+                    }, 150);
+                }
+                dots.forEach((dot, idx) => {
+                    if (idx === currentIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+
+            if (prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', () => update(currentIndex - 1));
+                nextBtn.addEventListener('click', () => update(currentIndex + 1));
+                dots.forEach(dot => {
+                    dot.addEventListener('click', () => {
+                        const idx = parseInt(dot.getAttribute('data-index'), 10);
+                        update(idx);
+                    });
+                });
+            }
+        }
+
+        // Setup Box 1 Slider (STA images)
+        setupProjectSlider({
+            images: ['Pic/STA1.png', 'Pic/STA2.png', 'Pic/STA3.png'],
+            imgId: 'project1-img',
+            prevId: 'proj1-prev',
+            nextId: 'proj1-next',
+            dotsSelector: '#proj1-dots .gallery-dot'
+        });
+
+        // Setup Box 2 Slider (SN images)
+        setupProjectSlider({
+            images: ['Pic/SN1.jpg', 'Pic/SN2.jpg', 'Pic/SN3.jpg'],
+            imgId: 'project2-img',
+            prevId: 'proj2-prev',
+            nextId: 'proj2-next',
+            dotsSelector: '#proj2-dots .gallery-dot'
+        });
+
+        // Setup Box 3 Slider
+        setupProjectSlider({
+            images: ['Pic/BRS1.png', 'Pic/BRS2.png', 'Pic/BRS3.png'],
+            imgId: 'project3-img',
+            prevId: 'proj3-prev',
+            nextId: 'proj3-next',
+            dotsSelector: '#proj3-dots .gallery-dot'
+        });
+    </script>
+</body>
+
+</html>

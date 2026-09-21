@@ -1,0 +1,232 @@
+/* ==========================================
+   SKILL COMPONENT STYLES
+   ========================================== */
+
+.skill-box {
+    flex: 1;
+    background-color: rgb(251, 251, 251);
+    border: 3.5px solid #6e4726;
+    border-radius: 16px;
+    padding: 25px 30px;
+}
+
+.skill-box h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+/* Skill Rotator Horizontal Layout */
+.skill-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+    margin-top: 5px;
+}
+
+.skill-rotator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    user-select: none;
+    padding: 2px 0;
+}
+
+.rotator-arrow {
+    background: none;
+    border: none;
+    color: rgb(178, 165, 135);
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0 8px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.rotator-arrow:hover {
+    color: #4a3e2c;
+    transform: scale(1.35);
+}
+
+.rotator-arrow:active {
+    transform: scale(0.9);
+}
+
+.rotator-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    max-width: 320px;
+}
+
+.rotator-item {
+    font-family: 'Mali', cursive, sans-serif;
+    text-align: center;
+    border-radius: 12px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.rotator-item.prev,
+.rotator-item.next {
+    background: none;
+    border: none;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #8c8273;
+    opacity: 0.6;
+    padding: 6px 12px;
+    cursor: pointer;
+    transform: scale(0.92);
+}
+
+.rotator-item.prev:hover,
+.rotator-item.next:hover {
+    opacity: 1;
+    color: #2b2317;
+    background-color: rgba(178, 165, 135, 0.22);
+    transform: scale(0.98);
+}
+
+.rotator-item.active {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1a150e;
+    background-color: rgb(178, 165, 135);
+    border: 1.5px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 12px rgba(178, 165, 135, 0.4);
+    padding: 8px 18px;
+    transform: scale(1.05);
+    cursor: default;
+}
+
+.skill-panels {
+    width: 100%;
+    background-color: rgba(178, 165, 135, 0.12);
+    border: 1px solid rgba(178, 165, 135, 0.3);
+    border-radius: 14px;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+}
+
+.skill-tab-content {
+    display: none;
+    width: 100%;
+}
+
+.skill-tab-content.active {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px;
+    animation: fadeInSkill 0.3s ease;
+}
+
+@keyframes fadeInSkill {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.skill-item:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+.skill-item img,
+.skill-item i {
+    width: 42px;
+    height: 42px;
+    font-size: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+}
+
+.skill-item span {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #000000;
+}
+
+.skill-item .db-icon {
+    color: #4db3ff;
+}
+
+/* Skill Icon Colors */
+.devicon-unity-plain.colored {
+    color: #222c37;
+}
+
+.devicon-blender-original.colored {
+    color: #ea7600;
+}
+
+.devicon-csharp-plain.colored {
+    color: #9b4f96;
+}
+
+.devicon-java-plain.colored {
+    color: #ea2d2e;
+}
+
+.devicon-python-plain.colored {
+    color: #387eb8;
+}
+
+.devicon-premierepro-plain.colored {
+    color: #9999ff;
+}
+
+.devicon-photoshop-plain.colored {
+    color: #31a8ff;
+}
+
+.devicon-html5-plain.colored {
+    color: #e34f26;
+}
+
+.devicon-css3-plain.colored {
+    color: #1572b6;
+}
+
+.devicon-kotlin-plain.colored {
+    color: #7f52ff;
+    background: linear-gradient(135deg, #f15f3e 0%, #c711e1 50%, #7f52ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.skill-info .aseprite-icon {
+    image-rendering: pixelated;
+}

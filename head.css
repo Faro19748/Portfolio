@@ -1,0 +1,36 @@
+/* ==========================================
+   HEAD COMPONENT STYLES
+   ========================================== */
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 3.5px solid #6e4726;
+    border-radius: 16px;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.head-info {
+    text-align: right;
+}
+
+.head h1 {
+    margin: 0;
+    font-size: 3.5rem;
+}
+
+.nickname {
+    margin: 5px 0 0 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+}
