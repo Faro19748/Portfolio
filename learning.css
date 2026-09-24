@@ -1,53 +1,55 @@
 /* ==========================================
-   LEARNING COMPONENT STYLES
+   LEARNING / EDUCATION COMPONENT STYLES
    ========================================== */
 
 .learning-box {
-    flex: 1;
-    background-color: rgb(251, 251, 251);
-    border: 3.5px solid #6e4726;
-    border-radius: 16px;
-    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .learning-box h2 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 2rem;
+    margin: 0 0 16px 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
 }
 
 .learning-info {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
 }
 
 .learning-item {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
-    padding: 10px 12px;
-    border-radius: 12px;
-    background-color: rgba(178, 165, 135, 0.1);
-    border: 1px solid rgba(178, 165, 135, 0.2);
-    transition: all 0.2s ease;
+    gap: 14px;
+    padding: 16px;
+    border-radius: 16px;
+    background: rgba(120, 85, 50, 0.04);
+    border: 1px solid var(--card-border);
+    transition: var(--transition-smooth);
+    position: relative;
 }
 
 .learning-item:hover {
-    background-color: rgba(178, 165, 135, 0.2);
+    background: var(--card-bg-hover);
+    border-color: var(--card-border-hover);
     transform: translateX(4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
 }
 
 .learning-icon {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-    border-radius: 10px;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-    transition: transform 0.2s ease;
+    font-size: 1.25rem;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .learning-item:hover .learning-icon {
@@ -55,49 +57,47 @@
 }
 
 .learning-icon.university {
-    background-color: rgba(33, 150, 243, 0.12);
-    color: #1976d2;
+    background: rgba(59, 130, 246, 0.12);
+    color: #3b82f6;
 }
 
 .learning-icon.school {
-    background-color: rgba(178, 165, 135, 0.25);
-    color: #61533e;
+    background: rgba(245, 158, 11, 0.12);
+    color: #f59e0b;
 }
 
 .learning-details {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
     min-width: 0;
+    flex: 1;
 }
 
 .learning-institution {
-    font-size: 0.98rem;
+    font-size: 1.02rem;
     font-weight: 700;
-    color: #1a150e;
+    color: var(--text-primary);
     line-height: 1.3;
-}
-
-.learning-institution.school-name {
-    font-size: 0.92rem;
 }
 
 .learning-major {
     font-size: 0.88rem;
-    font-weight: 600;
-    color: #554a3b;
-    line-height: 1.3;
+    font-weight: 500;
+    color: var(--text-secondary);
 }
 
 .learning-badge {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
     align-self: flex-start;
-    margin-top: 4px;
-    padding: 2px 8px;
+    margin-top: 6px;
+    padding: 3px 10px;
     font-size: 0.72rem;
     font-weight: 700;
-    border-radius: 6px;
-    background-color: rgb(215, 201, 168);
-    color: #5e5238;
-    letter-spacing: 0.3px;
+    border-radius: 999px;
+    background: var(--badge-bg);
+    border: 1px solid var(--badge-border);
+    color: var(--badge-text);
 }

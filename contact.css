@@ -3,102 +3,122 @@
    ========================================== */
 
 .contact-box {
-    flex: 1;
-    background-color: rgb(251, 251, 251);
-    border: 3.5px solid #6e4726;
-    border-radius: 16px;
-    padding: 25px 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-box h2 {
-    margin-top: 0;
-    margin-bottom: 15px;
-    font-size: 2rem;
+    margin: 0 0 16px 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
 }
 
 .contact-info {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 6px 10px;
-    border-radius: 12px;
+    gap: 14px;
+    padding: 10px 14px;
+    border-radius: 14px;
     text-decoration: none;
     color: inherit;
-    transition: all 0.2s ease;
+    background: rgba(120, 85, 50, 0.04);
+    border: 1px solid transparent;
+    transition: var(--transition-smooth);
+    position: relative;
+    cursor: pointer;
 }
 
 .contact-item:hover {
-    background-color: rgba(178, 165, 135, 0.2);
+    background: var(--card-bg-hover);
+    border-color: var(--card-border-hover);
     transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
 .contact-icon {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
-    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.15rem;
-    transition: transform 0.2s ease;
+    transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .contact-item:hover .contact-icon {
-    transform: scale(1.1);
+    transform: scale(1.12);
 }
 
+/* Icon Brand Accents */
 .contact-icon.email {
-    background-color: rgba(234, 67, 53, 0.12);
+    background: rgba(234, 67, 53, 0.12);
     color: #ea4335;
 }
 
 .contact-icon.phone {
-    background-color: rgba(52, 168, 83, 0.12);
+    background: rgba(52, 168, 83, 0.12);
     color: #34a853;
 }
 
 .contact-icon.github {
-    background-color: rgba(36, 41, 46, 0.1);
-    color: #24292e;
+    background: rgba(36, 41, 46, 0.12);
+    color: var(--text-primary);
 }
 
 .contact-icon.instagram {
-    background-color: rgba(225, 48, 108, 0.12);
+    background: rgba(225, 48, 108, 0.12);
     color: #e1306c;
 }
 
 .contact-icon.facebook {
-    background-color: rgba(24, 119, 242, 0.12);
+    background: rgba(24, 119, 242, 0.12);
     color: #1877f2;
 }
 
 .contact-details {
     display: flex;
     flex-direction: column;
-    line-height: 1.25;
+    line-height: 1.3;
     min-width: 0;
+    flex: 1;
 }
 
 .contact-label {
     font-size: 0.72rem;
     font-weight: 700;
-    color: #8c8273;
+    color: var(--text-muted);
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
 }
 
 .contact-value {
-    font-size: 0.95rem;
+    font-size: 0.92rem;
     font-weight: 600;
-    color: #1a150e;
+    color: var(--text-primary);
+    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+}
+
+.contact-action-hint {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    margin-left: auto;
+}
+
+.contact-item:hover .contact-action-hint {
+    opacity: 1;
+    color: var(--primary-accent);
 }
